@@ -35,4 +35,4 @@ push:
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
 
 clean:
-	docker rmi <IMAGE_TAG>
+	docker rmi ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
